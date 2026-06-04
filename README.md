@@ -46,8 +46,11 @@ src/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/SEU_USUARIO/NOME_DO_REPO.git](https://github.com/gianlucasms/async-email-processing-rabbitmq-dotnet.git
+git clone https://github.com/gianlucasms/async-email-processing-rabbitmq-dotnet.git
 cd async-email-processing-rabbitmq-dotnet
+
+```
+
 2. Start RabbitMQ (Docker)
 docker compose up -d
 
