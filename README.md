@@ -1,4 +1,4 @@
-# 📬 Async Email Processing with RabbitMQ + .NET 10
+# Async Email Processing with RabbitMQ + .NET 10
 
 This project demonstrates an asynchronous email processing architecture using RabbitMQ and a .NET 10 Worker Service.
 
@@ -6,7 +6,7 @@ The main goal is to decouple email sending from the main application flow, impro
 
 ---
 
-## 🧠 Architecture Overview
+## Architecture Overview
 
 The system follows a **producer-consumer pattern**:
 
@@ -22,7 +22,7 @@ API (Producer) → RabbitMQ → Worker → Email Service → ACK
 
 ---
 
-## 🚀 Technologies
+## Technologies
 
 - .NET 10 (Web API + Worker Service)
 - RabbitMQ
@@ -30,7 +30,7 @@ API (Producer) → RabbitMQ → Worker → Email Service → ACK
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 
 src/
@@ -41,7 +41,7 @@ src/
 
 ---
 
-## ⚙️ Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 
@@ -65,7 +65,7 @@ dotnet run
 cd src/EmailWorker
 dotnet run
 
-📤 How It Works
+How It Works
 A request is sent to the API to create a user
 The API publishes a message to RabbitMQ
 The message is stored in a queue (email-sending)
@@ -73,7 +73,7 @@ The Worker consumes the message
 The Email Service processes it (simulated)
 The message is acknowledged (ACK)
 
-🧪 Example Message
+Example Message
 {
   "userId": "11111111-1111-1111-1111-111111111111",
   "email": "teste@email.com",
@@ -81,13 +81,13 @@ The message is acknowledged (ACK)
   "occurredAt": "2026-03-25T12:00:00"
 }
 
-🔍 Key Concepts Demonstrated
+Key Concepts Demonstrated
 Asynchronous processing
 Message-based communication
 Producer / Consumer pattern
 Decoupling between services
 Background processing with Worker Service
 
-⚠️ Notes
+Notes
 Email sending is simulated (no real SMTP integration)
 Focus is on architecture and message flow
